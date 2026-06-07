@@ -130,3 +130,15 @@ The original QFT protocol design specifies operation over QUIC. For this prototy
 
 This implementation serves as a working foundation for future development of a complete QUIC-based QFT implementation.
 
+Extra Credit
+GitHub Repository
+
+Project source code is available at:
+
+https://github.com/Yashaswinibatchu/CS544-QFT-Protocol
+
+Implementation Reflection
+
+Additional documentation discussing lessons learned during implementation, protocol design updates, and future enhancements is included in:
+
+implementation_notes.txt
