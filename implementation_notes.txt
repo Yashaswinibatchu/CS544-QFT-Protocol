@@ -1,0 +1,13 @@
+QFT Protocol Implementation Reflection
+
+During the implementation phase of the QFT (QUIC File Transfer Protocol) project, I gained a deeper understanding of how protocol specifications are transformed into working software. While Part 2 focused on protocol design, message formats, PDUs, and DFA state transitions, Part 3 required implementing these concepts using real client-server communication.
+
+One of the most important lessons learned was the significance of state validation. During implementation, every incoming message had to be validated against the current protocol state to ensure correct protocol behavior. This demonstrated the practical value of the DFA created during the design phase.
+
+The implementation also highlighted the importance of message serialization and parsing. JSON-based messages were used to represent protocol PDUs while maintaining the structure defined in the protocol specification.
+
+Although the original protocol design was inspired by QUIC, this prototype implementation uses TCP sockets. This allowed the project to focus on authentication, file transfer, message handling, acknowledgements, and DFA validation while providing a solid foundation for future migration to a true QUIC transport layer.
+
+Future enhancements could include support for concurrent clients, encrypted file transfers, resumable downloads, stronger authentication mechanisms, and additional protocol commands.
+
+Overall, implementing the protocol reinforced the iterative nature of network protocol design and provided valuable insight into the relationship between protocol specifications and real-world software implementation.
